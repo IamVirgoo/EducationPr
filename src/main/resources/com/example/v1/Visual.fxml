@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" style="-fx-pref-height: 800px; -fx-pref-width: 1440px;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.v1.VisualController">
+   <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: F2F3FB;" VBox.vgrow="ALWAYS">
+      <AnchorPane prefHeight="121.0" prefWidth="1440.0" style="-fx-background-color: #2E3348;">
+         <Label layoutX="509.0" layoutY="39.0" text="CPP Segmentation Error" textFill="WHITE">
+            <font>
+               <Font size="35.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane layoutX="597.0" layoutY="641.0" prefHeight="121.0" prefWidth="246.0">
+         <children>
+            <Button layoutX="140.0" layoutY="20.0" mnemonicParsing="false" onAction="#Draw" style="-fx-background-color: #f39c63;" text="Receive" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutY="20.0" mnemonicParsing="false" onAction="#SwitchToScene1" style="-fx-background-color: #f39c63;" text="Back" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Canvas fx:id="canvas" height="350.0" layoutX="545.0" layoutY="224.0" width="350.0" />
+   </AnchorPane>
+</VBox>
